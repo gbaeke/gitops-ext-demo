@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: super
+  labels:
+    name: super
+spec:
+  containers:
+  - name: super
+    image: ghcr.io/gbaeke/super:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: <Port>
