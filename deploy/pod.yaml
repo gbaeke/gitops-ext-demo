@@ -4,6 +4,7 @@ metadata:
   name: super
   labels:
     name: super
+  namespace: default
 spec:
   containers:
   - name: super
@@ -13,4 +14,4 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
