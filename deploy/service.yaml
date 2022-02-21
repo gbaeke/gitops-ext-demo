@@ -4,7 +4,7 @@ metadata:
   name: superapi-svc
 spec:
   selector:
-    app: myapp
+    app: superapi
   ports:
   - port: 80
     targetPort: http
