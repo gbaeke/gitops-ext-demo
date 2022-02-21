@@ -1,0 +1,10 @@
+apiVersion: fluxdemo
+kind: SecretRetriever
+metadata:
+  name: pwd
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: ./plugins/SecretRetriever.sh
+spec:
+  keyName: foo
